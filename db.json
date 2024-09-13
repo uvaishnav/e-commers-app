@@ -1,0 +1,30 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Product 1",
+        "price": 19.99,
+        "category": "Electronics"
+      },
+      {
+        "id": 2,
+        "name": "Product 2",
+        "price": 29.99,
+        "category": "Clothing"
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "username": "vaishnav",
+        "password": "12345",
+        "role": "user"
+      },
+      {
+        "id": 2,
+        "username": "admin",
+        "password": "admin123",
+        "role": "admin"
+      }
+    ]
+}
