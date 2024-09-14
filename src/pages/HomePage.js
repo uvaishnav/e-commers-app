@@ -1,16 +1,21 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+
+import HeroSection from "../components/home/HeroSection";
+import FeaturedProducts from "../components/home/FeaturedProducts";
+import SpecialOffers from "../components/home/SpecialOffers";
+import BrandStory from "../components/home/BrandStory";
+
+import Footer from "../components/common/Footer"
 
 
 const HomePage = () => {
-  const navigate = useNavigate();
-  const login = () => {
-    navigate("/login");
-  }
   return (
     <div>
-      <h1>Home Page</h1>
-      <button onClick={login}>Login</button>
+      <HeroSection />
+      <FeaturedProducts />
+      <SpecialOffers />
+      <BrandStory />
+      <Footer />
     </div>
   );
 }

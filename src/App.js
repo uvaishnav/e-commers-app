@@ -8,7 +8,7 @@ import LoginPage from "./pages/LoginPage";
 import UserProductPage from "./pages/UserProductPage";
 
 // Components
-// import Header from "./components/common/Header";
+import Header from "./components/common/Header";
 
 //contexts
 import { AuthProvider } from "./context/AuthContext";
@@ -20,8 +20,8 @@ function App() {
   return (
     <AuthProvider>
       <Router>
+        <Header />
         <Routes>
-          {/* <Route path="/" element={<Header />} /> */}
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/user-product" element={

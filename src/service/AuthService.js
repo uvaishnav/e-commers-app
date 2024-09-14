@@ -1,9 +1,10 @@
 import axios from "axios";
+import { json_server } from "../components/common/constants";
 
 // Function to fetch users from the server
 const getUsers = async () => {
     try {
-        const response = await axios.get("http://localhost:9000/users");
+        const response = await axios.get(`${json_server}/users`);
         return response.data;
     } catch (e) {
         throw new Error("Failed to fetch users");
